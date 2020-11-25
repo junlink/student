@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Class-Path: jfreechart-1.0.19.jar poi-ooxml-3.16.jar jcommon-1.0.23.ja
+ r intellij_forms_rt.jar miglayout-swing.jar miglayout-core.jar sqlite
+ -jdbc-3.23.1.jar curvesapi-1.04.jar poi-3.16.jar stax-api-1.0.1.jar c
+ ommons-collections4-4.1.jar commons-codec-1.10.jar TableLayout.jar xm
+ lbeans-2.6.0.jar poi-ooxml-schemas-3.16.jar
+Main-Class: com.up.student.run.Main
+

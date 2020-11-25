@@ -1,0 +1,136 @@
+JFDML JFormDesigner: "6.0.2.0.116" Java: "1.8.0_112-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.GridLayout ) ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "panel1"
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+					"columns": 4
+					"rows": 7
+				} ) {
+					name: "panel3"
+					"minimumSize": new java.awt.Dimension( 480, 400 )
+					"preferredSize": new java.awt.Dimension( 480, 400 )
+					"border": new javax.swing.border.TitledBorder( "投资回报分析" )
+					"toolTipText": "飞机数据"
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "Label_amount"
+						"text": "第一年毕业人数"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "JT_num"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "Label_tuition"
+						"text": "学员学费/人"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "JT_tuition"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "Label_flying_hours"
+						"text": "教练机年飞行小时"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "JT_flying_hours"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "Label_operation_tax"
+						"text": "所得税率"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "JT_operation_tax"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "Label_amount_depreciation"
+						"text": "第一年折旧额"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "JT_amount_depreciation"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "Label_loan_interest"
+						"text": "第一年贷款利息"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "JT_loan_interest"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "Label_annual_grwth_rate_of_revenue_cost"
+						"text": "收入成本年增长率"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "JT_annual_grwth_rate_of_revenue_cost"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "Label__discount_rate"
+						"text": "折现率"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "JT_discount_rate"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "Label_operation_life"
+						"text": "运营年限"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "JT_operation_life"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "Label_initial_investment"
+						"text": "初始投资额"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "JT_initial_investment"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "Label_no_Stu"
+						"text": "新学员人数"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "JT_no_Stu"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "Label_no_Stu_Gro"
+						"text": "学员人数增长率"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "JT_no_Stu_Gro"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "Label_trainingPlane_Rate"
+						"text": "初教机/总教练机数"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "JT_trainingPlane_Rate"
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "Center"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+					"columns": 2
+				} ) {
+					name: "panel2"
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "Bt_ApData_Determine"
+						"text": "确定"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Bt_ApData_DetermineActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "Bt_back"
+						"text": "返回"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Bt_backActionPerformed", true ) )
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "South"
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 475, 350 )
+		} )
+	}
+}

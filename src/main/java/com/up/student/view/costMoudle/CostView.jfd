@@ -1,0 +1,401 @@
+JFDML JFormDesigner: "6.0.2.0.116" Java: "1.8.0_112-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			"background": new java.awt.Color( 0, 0, 0, 255 )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+				"columns": 3
+				"rows": 2
+				"vgap": 15
+			} ) {
+				name: "panel3"
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "Bt_airplane_data"
+					"text": "飞机数据"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Bt_airplane_dataActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "Bt_operation_data"
+					"text": "运营数据"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Bt_operation_dataActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "Bt_finance_data"
+					"text": "价格与财务数据"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Bt_finance_dataActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "Bt_insurance_data"
+					"text": "保险数据"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Bt_insurance_dataActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "Bt_repair_data"
+					"text": "维修数据"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Bt_repair_dataActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "Bt_teacher_data"
+					"text": "教员数据"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Bt_teacher_dataActionPerformed", true ) )
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "North"
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+				"columns": 4
+			} ) {
+				name: "panel4"
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "Bt_getInitData"
+					"text": "运营环境模拟"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Bt_getInitDataActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "Bt_backMain"
+					"text": "刷新"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Bt_backMainActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "Bt_variable_cost"
+					"text": "小时变动成本"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Bt_variable_costActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "Bt_fixed_cost"
+					"text": "小时固定成本"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Bt_fixed_costActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "Bt_dataShow"
+					"text": "数据汇总"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Bt_dataShowActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "Bt_ROI"
+					"text": "投资回报分析"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Bt_ROIActionPerformed", true ) )
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "South"
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+				"columns": 2
+				"rows": 3
+			} ) {
+				name: "panel1"
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+					"columns": 2
+					"rows": 5
+				} ) {
+					name: "panelAirplane"
+					"border": new javax.swing.border.TitledBorder( "飞机数据" )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label6"
+						"text": "飞机数量/架"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "LB_airplane1"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label2"
+						"text": "折旧年限/年"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "LB_airplane2"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label4"
+						"text": "残值率"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "LB_airplane3"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label5"
+						"text": "飞机座位数/个"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "LB_airplane4"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label9"
+						"text": "发动机数量/个"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "LB_airplane5"
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+					"columns": 2
+					"rows": 7
+				} ) {
+					name: "panelOperation"
+					"border": new javax.swing.border.TitledBorder( "运营数据" )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label7"
+						"text": "年均空中飞行时间/小时"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "LB_operation1"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label3"
+						"text": "飞机平均起落间隔"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "LB_operation2"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label8"
+						"text": "空中小时油耗/升"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "LB_operation3"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label10"
+						"text": "地面小时油耗/升"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "LB_operation4"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label11"
+						"text": "空地偏差率"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "LB_operation5"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label12"
+						"text": "起降费/（美元/大起落）"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "LB_operation6"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label13"
+						"text": "人机比"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "LB_operation7"
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+					"columns": 2
+					"rows": 9
+					"hgap": 10
+				} ) {
+					name: "panelFinance"
+					"border": new javax.swing.border.TitledBorder( "价格与财务数据" )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label14"
+						"text": "税前飞机价格(含发动机)/美元"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "LB_finance1"
+						"horizontalAlignment": 2
+						"alignmentX": 1.0f
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label15"
+						"text": "航油价格/元/升"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "LB_finance2"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label16"
+						"text": "关税"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "LB_finance3"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label17"
+						"text": "增值税"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "LB_finance4"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label18"
+						"text": "汇率"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "LB_finance5"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label19"
+						"text": "贷款比例"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "LB_finance6"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label20"
+						"text": "年利率"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "LB_finance7"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label26"
+						"text": "年还款次数"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "LB_finance8"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label27"
+						"text": "贷款年数"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "LB_finance9"
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+					"columns": 2
+					"rows": 5
+				} ) {
+					name: "panelInsurance"
+					"border": new javax.swing.border.TitledBorder( "保险数据" )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label21"
+						"text": "飞机保险费率"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "LB_insurance1"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label22"
+						"text": "每座保额"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "LB_insurance2"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label23"
+						"text": "座位险费率"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "LB_insurance3"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label24"
+						"text": "第三者险保额"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "LB_insurance4"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label25"
+						"text": "第三者险保费率"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "LB_insurance5"
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+					"columns": 2
+					"rows": 10
+				} ) {
+					name: "panelRepair"
+					"border": new javax.swing.border.TitledBorder( "维修数据" )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label28"
+						"text": "DA 40D换发费用/美元"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "LB_repair1"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label29"
+						"text": "换发时间间隔/小时"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "LB_repair2"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label30"
+						"text": "机身大修理航材费/美元"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "LB_repair3"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label31"
+						"text": "机身大修理时间间隔/小时"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "LB_repair4"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label32"
+						"text": "机身大修理工时/小时"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "LB_repair5"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label33"
+						"text": "机身大修理小时工时费/美元"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "LB_repair6"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label34"
+						"text": "飞机小修理航材费/美元"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "LB_repair7"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label35"
+						"text": "飞机小修理工时数/小时"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "LB_repair8"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label36"
+						"text": "飞机小修理时间间隔/小时"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "LB_repair9"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label37"
+						"text": "飞机小修理小时工时费/美元"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "LB_repair10"
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+					"columns": 1
+				} ) {
+					name: "panelTeacher"
+					"border": new javax.swing.border.TitledBorder( "教员数据" )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label38"
+						"text": "教员工资"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "LB_teacher1"
+					} )
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 20, 80 )
+			"size": new java.awt.Dimension( 720, 505 )
+		} )
+	}
+}

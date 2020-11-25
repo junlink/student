@@ -1,0 +1,78 @@
+JFDML JFormDesigner: "6.0.2.0.116" Java: "1.8.0_112-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+				"columns": 2
+				"rows": 5
+			} ) {
+				name: "panel1"
+				"minimumSize": new java.awt.Dimension( 480, 330 )
+				"preferredSize": new java.awt.Dimension( 480, 330 )
+				"border": new javax.swing.border.TitledBorder( "飞机数据" )
+				"toolTipText": "飞机数据"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "Label_amount"
+					"text": "飞机数量/架"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "JT_amount"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "Label_depreciationPeriod"
+					"text": "折旧年限/年"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "JT_depreciationPeriod"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "Label_salvageRate"
+					"text": "残值率"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "JT_salvageRate"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "Label_airplaneSeat"
+					"text": "飞机座位数/个"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "JT_airplaneSeat"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "Label_engineNumber"
+					"text": "发动机数量/个"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "JT_engineNumber"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+				"columns": 2
+			} ) {
+				name: "panel2"
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "Bt_ApData_Determine"
+					"text": "确定"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Bt_ApData_DetermineActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "Bt_back"
+					"text": "返回"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Bt_backActionPerformed", true ) )
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "South"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 15, 5 )
+			"size": new java.awt.Dimension( 500, 370 )
+		} )
+	}
+}
+

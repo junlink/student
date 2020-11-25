@@ -1,0 +1,86 @@
+JFDML JFormDesigner: "6.0.2.0.116" Java: "1.8.0_112-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.GridLayout ) {
+			"columns": 2
+			"rows": 10
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "Depreciation/USD/H"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "TF_depreciation_Cost"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "Interest /USD/H"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "TF_Interest_Cost"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "Principal and Interest/USD"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "TF_Interest_Principal"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "Insurance/USD"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "TF_Insurance_Cost"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": "Aircraft Insurance/USD"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "TF_JetInsurance"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label6"
+				"text": "Seat Insurance/USD"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "TF_SeatInsurance"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label7"
+				"text": "Third party Insurance/USD"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "TF_ThirdPartyInsurance"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label8"
+				"text": "Engine replace/USD"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "TF_EngineLargeRepair"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label9"
+				"text": "Major repairs/USD"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "TF_JetLargeRepair"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label10"
+				"text": "FixCost/USD/H"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "TF_FixedCost"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 400, 300 )
+		} )
+	}
+}

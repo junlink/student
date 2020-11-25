@@ -1,0 +1,90 @@
+JFDML JFormDesigner: "6.0.2.0.116" Java: "1.8.0_112-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+				"columns": 2
+				"rows": 7
+			} ) {
+				name: "panel1"
+				"border": new javax.swing.border.TitledBorder( "运营数据" )
+				"preferredSize": new java.awt.Dimension( 480, 330 )
+				"minimumSize": new java.awt.Dimension( 480, 330 )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "年均空中飞行时间/小时"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "TF_airTime"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"text": "飞机平均起落间隔"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "TF_landingInterval"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label3"
+					"text": "空中小时油耗/升"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "TF_airOil"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label4"
+					"text": "地面小时油耗/升"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "TF_landOil"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label5"
+					"text": "空地偏差率"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "TF_A_GDeviationDate"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label6"
+					"text": "起降费"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "TF_TO_LandingFee"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label7"
+					"text": "人机比"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "TF_ManMachineRatio"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+				"columns": 2
+			} ) {
+				name: "panel2"
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "Bt_OdData_Determine"
+					"text": "确定"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Bt_OdData_DetermineActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "Bt_OdBackMain"
+					"text": "返回"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Bt_OdBackMainActionPerformed", true ) )
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "South"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 400, 300 )
+		} )
+	}
+}

@@ -1,0 +1,77 @@
+JFDML JFormDesigner: "6.0.2.0.116" Java: "1.8.0_112-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			"minimumSize": new java.awt.Dimension( 480, 330 )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+				"rows": 5
+				"columns": 2
+			} ) {
+				name: "panel1"
+				"border": new javax.swing.border.TitledBorder( "保险数据" )
+				"minimumSize": new java.awt.Dimension( 480, 330 )
+				"preferredSize": new java.awt.Dimension( 480, 330 )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "飞机保险费率"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "TF_Jet_insurance"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"text": "每座保额"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "TF_PerSeat_insurance"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label3"
+					"text": "座位险费率"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "TF_seat_insurance_rate"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label4"
+					"text": "第三者险保额"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "TF_ThirdParty_insurance"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label5"
+					"text": "第三者险保费率"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "TF_ThirdParty_insurance_rate"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+				"columns": 2
+			} ) {
+				name: "panel2"
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "Bt_InsuranceData_determine"
+					"text": "确定"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Bt_InsuranceData_determineActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "Bt_InsuranceData_BackMain"
+					"text": "返回"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Bt_InsuranceData_BackMainActionPerformed", true ) )
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "South"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 530, 400 )
+		} )
+	}
+}

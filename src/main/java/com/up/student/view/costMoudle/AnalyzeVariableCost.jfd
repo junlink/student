@@ -1,0 +1,57 @@
+JFDML JFormDesigner: "6.0.2.0.116" Java: "1.8.0_112-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.GridLayout ) {
+			"rows": 5
+			"columns": 2
+		} ) {
+			name: "this"
+			"minimumSize": new java.awt.Dimension( 54, 33 )
+			"maximizedBounds": new java.awt.Rectangle( 50, 50, 100, 90 )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "Label_amount"
+				"text": "Faculty salary/USD/H"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "JT_Teacher_Salary"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "Label_depreciationPeriod"
+				"text": "Fuel cost/USD/H"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "JT_Fuel_Cost"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "Label_salvageRate"
+				"text": "flight support fee/USD"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "JT_AviationSupport_Cost"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "Label_airplaneSeat"
+				"text": "Small maintenance cost/USD"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "JT_Small_Repair"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "Label_engineNumber"
+				"text": "VariableCost/USD/H"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "JT_VaribleCost"
+				"minimumSize": new java.awt.Dimension( 54, 33 )
+				"preferredSize": new java.awt.Dimension( 54, 33 )
+				"alignmentX": 2.5f
+				"alignmentY": 2.5f
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 400, 300 )
+		} )
+	}
+}
